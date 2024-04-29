@@ -8,8 +8,8 @@ from utils.generator import my_generator
 def bubble_sort(come_list: list[int]) -> list[int]:
     length_list = len(come_list)
 
-    for count in range(length_list - 1):
-        for index in range(length_list - 1 - count):
+    for bubble in range(length_list - 1):
+        for index in range(length_list - 1 - bubble):
             if come_list[index] > come_list[index + 1]:
                 come_list[index], come_list[index + 1] = come_list[index + 1], come_list[index]
     return come_list            
